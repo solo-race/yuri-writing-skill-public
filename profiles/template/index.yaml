@@ -1,0 +1,31 @@
+schema_version: 1
+template: true
+purpose: 按任务选择人物与连续性资料，避免一次加载全部规则
+# 复制并填写后，将 template 改为 false，character_set 填为自己的系列标识。
+character_set: null
+
+routes:
+  character_story:
+    load: [profile.yaml, partner.yaml]
+  serialized_story_or_diary:
+    load: [profile.yaml, partner.yaml, continuity.yaml]
+    also_read: 与本次续写有关的正式正文，不以摘要替代
+  retrospective_or_old_object:
+    additionally_load: [history.yaml]
+  complex_narrative_revision:
+    optionally_load: [../../style-guide.md]
+  narrative_method_analysis:
+    optionally_load: [../../references/literary-methods.md]
+
+canon:
+  # 可填写用户指定的本地目录、文档位置或仓库；模板不连接任何外部存档。
+  location: null
+  index: null
+  formal_text_path: null
+  priority: 用户当次明确要求优先；连续性以已确认设定与正式正文为准，摘要可能滞后
+  revision_rule: 区分续写与设定修订；遇到冲突回查正文，无法确定时不擅自改写历史
+
+workflow:
+  draft: 按用户要求交付可审核的正文草稿
+  archive: 仅在用户批准后写入指定位置，按该项目规则更新索引
+  check: 归档后核对正文与索引，不自动覆盖既有正式正文

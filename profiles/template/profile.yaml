@@ -1,0 +1,27 @@
+schema_version: 1
+template: true
+id: null
+fictional: true
+identity:
+  name: null
+  familiar_name: null
+  gender: null
+  age: null
+  species: null
+  identity_note: null
+# 只填写用户已提供或已确认的事实；空字段表示未设定，不表示刻意保密。
+appearance: {}
+personality:
+  core: null
+  range: null
+independent_life:
+  work_or_study: null
+  interests: []
+  social_connections: []
+relationship:
+  partner: partner.yaml
+  status: null
+  setting: null
+# 非现实能力或世界规则按需填写，同时记录适用范围与限制；不默认存在。
+world_specific: {}
+unconfirmed: []

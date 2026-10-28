@@ -1,0 +1,26 @@
+schema_version: 1
+template: true
+id: null
+fictional: true
+identity:
+  name: null
+  familiar_name: null
+  gender: null
+  age: null
+  species: null
+  identity_note: null
+appearance: {}
+personality:
+  core: null
+  range: null
+# 另一主要人物也有独立生活、需求与决定，不只承担陪伴或解决冲突的功能。
+independent_life:
+  work_or_study: null
+  interests: []
+  social_connections: []
+relationship:
+  partner: profile.yaml
+  status: null
+  setting: null
+world_specific: {}
+unconfirmed: []

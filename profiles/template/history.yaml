@@ -1,0 +1,12 @@
+schema_version: 1
+template: true
+purpose: 可选历史索引；仅在回忆既往事件、关系起点或核查旧物来源时读取
+canonical_location: null
+authority: historical_summary_not_new_canon
+
+# 以事件名为键，记录 summary 与 source；只保留正式正文已确认的历史。
+relationship: {}
+# 每条可记录 date、event、source，不把已结束的事情误记为当前待办。
+notable_history: []
+
+reference_note: 日期与人物细节以正式正文为准；这里不是完整历史，也不提供仍有效的待办事项

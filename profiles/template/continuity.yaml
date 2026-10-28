@@ -1,0 +1,20 @@
+schema_version: 1
+template: true
+as_of: null
+source_of_truth:
+  # 正式正文位置与 index.yaml 的 canon 保持一致；无存档时保持为空。
+  location: null
+  index: null
+  formal_text_path: null
+purpose: 只记仍持续的生活状态及未结束的线索；完整故事以正式正文为准
+
+home: {}
+# 每条可记录 date、fact、source；source 指向该系列的正式正文。
+recent_persistent_details: []
+# 每条可记录 id、since、state、detail、source；不预先替未揭晓线索设定答案。
+open_threads: []
+
+maintenance:
+  - 续写前核对有关的正式正文；本文件不是逐日摘要
+  - 已结束或普通一次性细节不留在 open_threads
+  - 故事自然衔接即可，既有物件或关系经验不必为证明设定而反复提及
